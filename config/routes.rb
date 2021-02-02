@@ -4,10 +4,9 @@ Rails.application.routes.draw do
   # get 'doses/create'
 
   resources :cocktails, only: [:index, :new, :show, :create]do
-    resources :doses, only: [:new, :create, :destroy]
-
+    resources :doses, only: [:new, :create]
   end
-
+  resources :doses, only: [:destroy]
   # resources :ingredients, only: [:index, :new, :create]do
   #   resources :doses, only: [:new, :create, :destroy]
   # end
