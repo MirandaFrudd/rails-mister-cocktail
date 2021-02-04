@@ -1,11 +1,14 @@
 <h1>Cocktails index</h1>
-<ul>
+
   <% @cocktails.each do |cocktail| %>
-  <li>
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
-  </li>
-  <%end %>
-</ul>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text"><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+      </div>
+    </div>
+ <%end %>
+
 
 <%= link_to 'New cocktail', new_cocktail_path %>
 
