@@ -1,11 +1,11 @@
-<h1>Cocktails index</h1>
-
+  <%= render 'shared/banner' %>
   <% @cocktails.each do |cocktail| %>
     <div class="card" style="width: 18rem;">
 
       <% if cocktail.photo.present? %>
-      <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+        <%= cl_image_tag cocktail.photo.key, crop: :fill %>
       <% end %>
+
       <div class="card-body">
         <button type="button" class="btn btn-outline-info btn-block"><%= link_to cocktail.name, cocktail_path(cocktail) %></button>
       </div>
@@ -13,5 +13,4 @@
  <%end %>
 
 
-<%= link_to 'New cocktail', new_cocktail_path %>
 
