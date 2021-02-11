@@ -13,16 +13,23 @@
 @import "pages/index";
 @import "components/navbar";
 
-$grey: #e7ecef;
-$dark-blue: #274c77;
-$medium-blue: #6096ba;
-$light-blue: #a3cef1;
-$dark-grey: #8b8c89;
 
 body {
   background: $grey;
 }
 
-h1 {
+h1, h2 {
+  color: $dark-blue;
+  padding: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none!important;
   color: $dark-blue;
 }
+
+

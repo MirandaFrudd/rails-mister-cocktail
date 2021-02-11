@@ -24,6 +24,9 @@ module RailsMisterCocktail
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    #added to add video banner
+    config.assets.paths << "rails-mister-cocktail/app/assets/videos"
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

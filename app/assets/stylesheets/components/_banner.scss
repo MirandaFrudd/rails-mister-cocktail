@@ -1,7 +1,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 160px 0;
+  padding: 160px 0 !important;
   background-image: asset-url('banner-image.jpg')
 }
 
@@ -19,3 +19,19 @@
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
+// .home_video {
+//  width: 100vw;
+//  height: 100vh;
+//  position: absolute;
+//  object-fit: cover;
+//  top: 0;
+//  z-index: -2;
+// }
+// .home-video-wrapper {
+// height: 100vh;
+// display: flex;
+// }
+// h1.home {
+//   color: white;
+// }

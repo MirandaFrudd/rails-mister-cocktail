@@ -59,4 +59,8 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  #added to add video banner
+  # config.assets.paths << "#{Rails.root}/app/assets/videos"
+  # config.assets.unknown_asset_fallback = true
 end

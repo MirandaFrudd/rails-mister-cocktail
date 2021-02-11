@@ -1,16 +1,9 @@
-<ul id='navigation' class='navbar-lewagon'>
-  <li><%= link_to 'New cocktail', new_cocktail_path %></li>
-  <li><%= link_to 'View all', cocktails_path %></li>
-  <li><%= link_to 'Back', cocktail_path(@cocktail) %></li>
-</ul>
 
-
-<div id='banner'><h1> Off-Rails Cocktails </h1></div>
-
-
-<h1>New Dose</h1>
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit %>
-<% end %>
+<h2>New Dose</h2>
+<div class="d-flex justify-content-center form">
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
