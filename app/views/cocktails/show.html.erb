@@ -1,15 +1,18 @@
 <h2> <%= @cocktail.name %> </h2>
-
-
-<div class="card-product" style="display: flex">
-  <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+<div class="show-container">
+<div class="row justify-content-center">
+<div class="col-12 col-sm-6 col-md-8" style="display: flex">
+  <%= cl_image_tag @cocktail.photo.key, height: 300, crop: :fill %>
   <% @cocktail.doses.each do |dose| %>
-    <div class="card-product-infos">
-      <p><%= "#{dose.ingredient.name} #{dose.description}" %></p>
+    <div class="col-6 col-md-4">
+      <p><%= "#{dose.description} #{dose.ingredient.name}" %></p>
+      <br>
+      <%= link_to 'Delete', dose_path(dose), method: :delete, class: "btn btn-ghost" %>
     </div>
-</div>
-      <%= link_to 'Delete', dose_path(dose), method: :delete %>
   <% end %>
+  </div>
+</div>
+</div>
 <hr>
 
 <li><%= link_to 'Add dose',  new_cocktail_dose_path(@cocktail), class: "btn btn-ghost"%></li>

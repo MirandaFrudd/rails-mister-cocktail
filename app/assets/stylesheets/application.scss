@@ -15,7 +15,7 @@
 
 
 body {
-  background: $grey;
+  background: #e7ecef;
 }
 
 h1, h2 {
@@ -32,4 +32,12 @@ a {
   color: $dark-blue;
 }
 
+img{
+  object-fit: cover;
+}
+
+.show-container{
+  background-color: #274c77;
+  padding: 50px 0px;
+}
 

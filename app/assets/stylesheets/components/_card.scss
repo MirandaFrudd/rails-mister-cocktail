@@ -1,3 +1,6 @@
+@import "config/colors";
+
+
 #cards {
   // display: grid;
   width: 20rem;
@@ -5,19 +8,26 @@
   padding: 1.5rem;
 }
 
+.card {
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #e7ecef;
+}
 
-// .card {
-//   display: inline-grid;
-// }
-
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 .card-product {
   overflow: hidden;
-  height: 350px;
+  height: auto;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  width: 50%;
+  margin: 50px;
 }
 
 .card-product img {
