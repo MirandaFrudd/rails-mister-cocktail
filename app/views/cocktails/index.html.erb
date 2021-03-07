@@ -1,18 +1,23 @@
   <%= render 'shared/banner' %>
   <div class="row align-items-start">
   <% @cocktails.each do |cocktail| %>
-    <div class="col">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
       <div id="cards">
+        <%= link_to cocktail_path(cocktail) do %>
         <div class="card">
           <% if cocktail.photo.present? %>
             <%= cl_image_tag cocktail.photo.key, crop: :fill %>
           <% end %>
+
           <div class="card-body">
-            <button type="button" class="btn btn-ghost"><%= link_to cocktail.name, cocktail_path(cocktail) %></button>
+            <p> <%= cocktail.name %> </p>
           </div>
         </div>
       </div>
+      <%end %>
+
     </div>
- <%end %>
+  <%end %>
 </div>
 

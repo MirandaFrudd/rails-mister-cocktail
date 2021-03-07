@@ -1,8 +1,13 @@
-<h1>Create a Cocktail</h1>
-<div class="d-flex justify-content-center form">
-  <%= simple_form_for (@cocktail) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit %>
-  <% end %>
+<div class="banner-small">
+  <h1>Create a Cocktail</h1>
+</div>
+
+<div class="show-container">
+  <div class="d-flex justify-content-center form">
+    <%= simple_form_for (@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit %>
+    <% end %>
+  </div>
 </div>
