@@ -1,0 +1,26 @@
+
+.show-container{
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin: 0 200px;
+  // display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-img{
+
+
+}
+
+.show-img img {
+height: 375px;
+width: 450px;
+object-fit: cover;
+}
+
+.show-description{
+
+}

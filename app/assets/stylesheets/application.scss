@@ -15,7 +15,7 @@
 
 
 body {
-  background: $grey;
+  background: #e7ecef;
 }
 
 h1, h2 {
@@ -30,6 +30,10 @@ li {
 a {
   text-decoration: none!important;
   color: $dark-blue;
+}
+
+img{
+  object-fit: cover;
 }
 
 

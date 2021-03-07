@@ -1,15 +1,26 @@
-<h2> <%= @cocktail.name %> </h2>
-
-
-<div class="card-product" style="display: flex">
-  <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-  <% @cocktail.doses.each do |dose| %>
-    <div class="card-product-infos">
-      <p><%= "#{dose.ingredient.name} #{dose.description}" %></p>
-    </div>
+<div class="banner-small">
+  <h2> <%= @cocktail.name %> </h2>
 </div>
-      <%= link_to 'Delete', dose_path(dose), method: :delete %>
-  <% end %>
-<hr>
 
-<li><%= link_to 'Add dose',  new_cocktail_dose_path(@cocktail), class: "btn btn-ghost"%></li>
+<div class="show-container">
+<div class="row justify-content-center">
+<div class="show-img" style="display: flex">
+  <%= cl_image_tag @cocktail.photo.key, height: 300, crop: :fill %>
+</div>
+  <ul>
+  <% @cocktail.doses.each do |dose| %>
+    <div class="show-description">
+      <li><%= "#{dose.description} #{dose.ingredient.name}" %></li>
+
+      <%= link_to dose_path(dose), method: :delete do%>
+        <i class="fas fa-trash"></i>
+      <% end %>
+  <% end %>
+    </div>
+<!--   </div> -->
+</ul>
+</div>
+<!-- </div> -->
+<hr>
+<p><%= link_to 'Add dose',  new_cocktail_dose_path(@cocktail), class: "btn btn-ghost"%></p>
+
