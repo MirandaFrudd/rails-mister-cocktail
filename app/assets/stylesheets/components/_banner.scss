@@ -1,8 +1,26 @@
+
+.home_video {
+ width: 100vw;
+ height: 400px;
+ // position: absolute;
+ object-fit: cover;
+ top: 0;
+ z-index: -2;
+ margin: 0px;
+}
+.home-video-wrapper {
+  // height: 100vh;
+  // display: flex;
+}
+h1.home {
+  color: white;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 160px 0 !important;
-  background-image: asset-url('Stars.jpg')
+  // padding: 160px 0 !important;
+  // background-image: asset-url('Stars.jpg')
 }
 
 .banner h1 {

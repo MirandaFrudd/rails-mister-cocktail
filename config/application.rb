@@ -21,11 +21,13 @@ Bundler.require(*Rails.groups)
 
 module RailsMisterCocktail
   class Application < Rails::Application
+    #added to add video banner
+    config.assets.paths << "#{Rails.root}/app/assets/videos"
+    # config.assets.paths << "rails-mister-cocktail/app/assets/videos"
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    #added to add video banner
-    config.assets.paths << "rails-mister-cocktail/app/assets/videos"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
