@@ -1,19 +1,21 @@
 
 .home_video {
  width: 100vw;
- height: 400px;
- // position: absolute;
+ height: 550px;
+ position: absolute;
  object-fit: cover;
  top: 0;
  z-index: -2;
  margin: 0px;
 }
 .home-video-wrapper {
-  // height: 100vh;
-  // display: flex;
+  height: 400px;
+  display: flex;
 }
 h1.home {
   color: white;
+  padding-top: 200px;
+  padding-left: 150px;
 }
 
 .banner {
@@ -31,6 +33,10 @@ h1.home {
   font-weight: bold;
 }
 
+.banner h2 {
+  color: $flower-blue;
+}
+
 .banner p {
   font-size: 20px;
   color: white;
@@ -42,7 +48,8 @@ h1.home {
   background-size: cover;
   background-position: center;
   padding: 70px 0 !important;
-  background-image: asset-url('Stars.jpg');
+  // background-image: asset-url('Stars.jpg');
+  background-color: $flower-blue;
   margin-bottom: 50px;
 }
 .banner-small h1, h2 {
@@ -51,20 +58,26 @@ h1.home {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
 }
 
-// .home_video {
-//  width: 100vw;
-//  height: 100vh;
-//  position: absolute;
-//  object-fit: cover;
-//  top: 0;
-//  z-index: -2;
-// }
-// .home-video-wrapper {
-// height: 100vh;
-// display: flex;
-// }
-// h1.home {
-//   color: white;
-// }
+.top-heading{
+  background-color: $light-gray;
+  padding: 10px;
+  border-radius: 5px;
+  padding: 40px 10px;
+  border-radius: 5px;
+  opacity: 0.95;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.top-heading h2{
+  color: $flower-blue!important;
+  text-shadow: none!important;
+}
+
+.top-heading-text{
+  text-align: center;
+}
+

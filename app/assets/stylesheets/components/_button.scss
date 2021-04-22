@@ -11,3 +11,85 @@
 .btn-ghost:hover {
   opacity: 1;
 }
+
+.cocktail-btn{
+  padding: 5px;
+  width: 140px;
+  background-color: $action-purple;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+}
+
+.cocktail-btn:hover{
+  padding: 5px;
+  width: 140px;
+  background-color: $action-hover;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+}
+
+
+.cocktail-btn a{
+  color: white!important;
+  text-decoration: none;
+}
+
+.show-btn{
+  padding: 10px;
+  width: 100px;
+  background-color: $action-purple;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  position: absolute;
+  top: 665px;
+  right: 430px;
+  text-align: center;
+}
+
+.show-btn:hover{
+  padding: 10px;
+  width: 100px;
+  background-color: $action-hover;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  position: absolute;
+  top: 665px;
+  right: 430px;
+  text-align: center;
+}
+
+
+.show-btn a{
+  color: white!important;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white!important;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px;
+  width: 140px;
+  background-color: $action-purple;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  }
+
+  .btn:hover {
+  padding: 10px;
+  width: 140px;
+  background-color: $action-hover;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  }
+

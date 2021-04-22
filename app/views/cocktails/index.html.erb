@@ -1,12 +1,17 @@
   <%= render 'shared/banner' %>
-
-  <div class="row align-items-start">
+<div class="container top-heading">
+  <h2 class="top-heading-text">Browse our selection of drinks, or add to the collection by making your own!</h2>
+  <div class="cocktail-btn">
+    <%= link_to "New cocktail", new_cocktail_path, class: "nav-link" %>
+  </div>
+</div>
+  <div class="container row align-items-start">
   <% @cocktails.each do |cocktail| %>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="col-xs-9 col-sm-6 col-md-4">
 
-      <div id="cards">
+      <div class="cards">
         <%= link_to cocktail_path(cocktail) do %>
-        <div class="card">
+        <div class="card-photo">
           <% if cocktail.photo.present? %>
             <%= cl_image_tag cocktail.photo.key, crop: :fill %>
           <% end %>

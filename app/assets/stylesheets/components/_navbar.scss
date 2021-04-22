@@ -3,8 +3,15 @@
   background: white;
   list-style: none;
   display: flex;
-  justify-content: left;
-  height: 75px;
+  height: 55px;}
+
+.nav-link{
+  color: $action-purple!important;
+}
+
+.nav-link:hover{
+  background-color: $action-hover!important;
+  border-radius: 5px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -14,3 +21,10 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.fa-glass-cheers:before {
+    font-size: 25px;
+    color: $action-purple;
+}
+
+

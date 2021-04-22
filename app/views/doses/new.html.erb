@@ -1,9 +1,13 @@
+<div class="banner-small">
+  <h2><i class="fas fa-star"></i> New Dose <i class="fas fa-star"></i></h2>
+</div>
 
-<h2>New Dose</h2>
-<div class="d-flex justify-content-center form">
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-    <%= f.button :submit %>
-  <% end %>
+<div class="new-show-container">
+  <div class="d-flex justify-content-center form">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
 </div>
